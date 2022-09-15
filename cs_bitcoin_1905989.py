@@ -121,7 +121,7 @@ else:
 
 ### Example 2: calling function digitalSignRSA to sign a given message
 
-studentID = '1905989'
+studentID = '1234567'
 message = str(nonce) + ' ' + studentID
 msg = bytes(message, 'utf-8')
 print("Message : ", message)
@@ -135,7 +135,7 @@ print('  ')
 ### verifying a message signature using function digitalVerifyRSA
 
 # Verify the true digital signature with the original message
-studentID = '1905989'
+studentID = '1234567'
 message = str(nonce) + ' ' + studentID
 msg = bytes(message, 'utf-8')
 validity = digitalVerifyRSA(msg, keyPair, signature)
